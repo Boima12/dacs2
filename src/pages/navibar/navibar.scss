@@ -1,0 +1,99 @@
+div.main {
+    width: 100%;
+    height: 40px;
+    flex-shrink: 0;
+
+    div.navibar {
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid #5E5E5E;
+        background: #191919;
+    
+        z-index: 999;
+        position: fixed;
+
+        display: flex;
+        align-items: center;
+    
+        a {
+            text-decoration: none;
+            width: 100px;
+            height: 100%;
+    
+            transition-duration: 0.4s;
+            transition-property: all;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            
+    
+            // outline: 1px solid red;
+    
+            h3 {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;            
+            }
+    
+            p {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;            
+            }
+    
+            &:hover {
+                background-color: #7B61FF;
+    
+                h3, p {
+                    color: #ffffff;
+                }
+            }
+        }
+    
+    
+        img:hover {
+            cursor: pointer;
+        }
+    
+        img.chat {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+    
+            // order: 5;
+    
+            position: absolute;
+            right: 150px;
+        }
+    
+        img.inbox {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;     
+            
+            // order: 6;
+    
+            position: absolute;
+            right: 100px;
+        }
+    
+        img.user {
+            width: 25px;
+            height: 25px;
+            flex-shrink: 0;   
+    
+            // order: 7;
+            
+            position: absolute;
+            right: 40px;
+        }
+    }
+}

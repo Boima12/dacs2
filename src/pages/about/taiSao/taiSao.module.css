@@ -1,0 +1,66 @@
+div.main {
+  width: 100%;
+  height: 734px;
+  background: #191919;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+div.main div.box1 {
+  width: 825px;
+  height: 436px;
+  flex-shrink: 0;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+div.main div.box1 p:nth-child(1) {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 15px;
+}
+div.main div.box1 div.cards {
+  width: 825px;
+  height: 360px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+div.main img.decoicon2 {
+  width: 91px;
+  height: 91px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 90px;
+  right: 700px;
+  animation: floating 20s ease infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px) rotate(-7deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(-7deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-7deg);
+  }
+}
+div.main div.box1 div.cards div:nth-child(2) {
+  transition-delay: 200ms;
+}
+div.main div.box1 div.cards div:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+/*# sourceMappingURL=taisao.module.css.map */

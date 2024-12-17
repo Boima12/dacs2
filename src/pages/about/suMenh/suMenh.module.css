@@ -1,0 +1,118 @@
+div.main {
+  width: 100%;
+  height: 707px;
+  background: #191919;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.main div.box1 {
+  width: 1363px;
+  height: 555px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+div.main div.box1 div.decoImages {
+  width: 571px;
+  height: 555px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.main div.box1 div.decoImages img {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+}
+div.main div.box1 div.decoImages img:nth-of-type(1) {
+  z-index: 1;
+  right: 70px;
+  top: 0px;
+}
+div.main div.box1 div.decoImages img:nth-of-type(2) {
+  z-index: 2;
+  right: 0px;
+  bottom: 0px;
+}
+div.main div.box1 div.decoImages img:nth-of-type(3) {
+  z-index: 3;
+  left: 0px;
+}
+div.main div.box1 div.paragraphs {
+  width: 665px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+div.main div.box1 div.paragraphs p:nth-of-type(1) {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 50px;
+}
+div.main div.box1 div.paragraphs p:nth-of-type(2) {
+  color: #FFF;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 665px;
+}
+div.main img.decoicon1 {
+  width: 91px;
+  height: 91px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 290px;
+  right: 270px;
+  animation: floating 20s ease infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px) rotate(35deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(35deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(35deg);
+  }
+}
+/* Scrolling animation */
+.scr_hidden {
+  transition: all 0.9s;
+  transition-delay: 0.4s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-300px);
+}
+
+.scr_show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/*# sourceMappingURL=suMenh.module.css.map */

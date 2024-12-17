@@ -1,0 +1,90 @@
+div.main {
+  width: 253px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #DEDEDE;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.main img {
+  width: 253px;
+  height: 156px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+div.main h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 216px;
+  z-index: 2;
+}
+div.main p {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 213px;
+  z-index: 2;
+  position: absolute;
+  top: 202px;
+}
+
+/* Scrolling animation */
+div {
+  transition: all 1.6s;
+}
+div.scr_hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+}
+div.scr_show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+div img {
+  transition: all 1.6s;
+}
+div img.scr_hidden {
+  opacity: 0.5;
+}
+div img.scr_show {
+  opacity: 1;
+}
+div h3 {
+  transition: all 1s;
+  transition-delay: 0.2s;
+}
+div h3.scr_hidden {
+  opacity: 0;
+  transform: translateY(100%);
+}
+div h3.scr_show {
+  opacity: 1;
+  transform: translateY(0);
+}
+div p {
+  transition: all 1s;
+  transition-delay: 0.3s;
+}
+div p.scr_hidden {
+  opacity: 0;
+  transform: translateY(100%);
+}
+div p.scr_show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=card.module.css.map */
