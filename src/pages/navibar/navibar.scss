@@ -58,42 +58,136 @@ div.main {
             }
         }
     
-    
-        img:hover {
-            cursor: pointer;
-        }
-    
-        img.chat {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
-    
-            // order: 5;
-    
+        div.entryBt {
+            width: 120px;
+            height: 30px;
+            flex-shrink: 0;            
+
             position: absolute;
-            right: 150px;
-        }
-    
-        img.inbox {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;     
+            right: 50px;
+
+            display: inline-block;
             
-            // order: 6;
-    
-            position: absolute;
-            right: 100px;
+            button {
+                width: 100%;
+                height: 90%;
+                border-radius: 3px;
+                background: #A8E8A8;   
+
+                border: 0px;
+                transition: all 0.4s;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: #000;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;         
+                
+                &:hover {
+                    background: #d4ffd4; 
+                }
+            }
         }
-    
-        img.user {
-            width: 25px;
+
+        div.approved {
+            width: 120px;
             height: 25px;
-            flex-shrink: 0;   
-    
-            // order: 7;
+            flex-shrink: 0;
             
             position: absolute;
-            right: 40px;
+            right: 50px;
+
+            display: none;
+            // display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // outline: 3px solid red;
+
+            img {
+                object-fit: cover;
+                display: block;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.chat {
+                    width: 18px;
+                    height: 18px;
+                    flex-shrink: 0;
+                }
+
+                &.inbox {
+                    width: 18px;
+                    height: 18px;
+                    flex-shrink: 0;
+                }
+
+                &.user {
+                    width: 25px;
+                    height: 25px;
+                    flex-shrink: 0;  
+                }
+            }
+        }
+
+        div.accountMenu {
+            width: 150px;
+            height: 80px;
+            flex-shrink: 0;            
+
+            border-right: 0.5px solid rgba(0, 0, 0, 0.70);
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.70);
+            border-left: 0.5px solid rgba(0, 0, 0, 0.70);                        
+
+            display: none;
+            // display: inline-block;
+            position: absolute;
+            top: 41px;
+            right: 30px;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                li {
+                    width: 100%;
+                    height: 40px;
+                    flex-shrink: 0;    
+
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    background: #FFF;
+                    transition: all 0.4s;
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                
+                    
+                    &:hover {
+                        background: #ffffffba;
+                        cursor: default;
+                    }
+                }
+            }
         }
     }
 }

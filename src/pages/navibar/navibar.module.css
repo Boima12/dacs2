@@ -45,29 +45,107 @@ div.main div.navibar a:hover {
 div.main div.navibar a:hover h3, div.main div.navibar a:hover p {
   color: #ffffff;
 }
-div.main div.navibar img:hover {
-  cursor: pointer;
-}
-div.main div.navibar img.chat {
-  width: 18px;
-  height: 18px;
+div.main div.navibar div.entryBt {
+  width: 120px;
+  height: 30px;
   flex-shrink: 0;
   position: absolute;
-  right: 150px;
+  right: 50px;
+  display: inline-block;
 }
-div.main div.navibar img.inbox {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  position: absolute;
-  right: 100px;
+div.main div.navibar div.entryBt button {
+  width: 100%;
+  height: 90%;
+  border-radius: 3px;
+  background: #A8E8A8;
+  border: 0px;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-div.main div.navibar img.user {
-  width: 25px;
+div.main div.navibar div.entryBt button:hover {
+  background: #d4ffd4;
+}
+div.main div.navibar div.approved {
+  width: 120px;
   height: 25px;
   flex-shrink: 0;
   position: absolute;
-  right: 40px;
+  right: 50px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+div.main div.navibar div.approved img {
+  object-fit: cover;
+  display: block;
+}
+div.main div.navibar div.approved img:hover {
+  cursor: pointer;
+}
+div.main div.navibar div.approved img.chat {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+div.main div.navibar div.approved img.inbox {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+div.main div.navibar div.approved img.user {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+div.main div.navibar div.accountMenu {
+  width: 150px;
+  height: 80px;
+  flex-shrink: 0;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.7);
+  border-left: 0.5px solid rgba(0, 0, 0, 0.7);
+  display: none;
+  position: absolute;
+  top: 41px;
+  right: 30px;
+}
+div.main div.navibar div.accountMenu ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.main div.navibar div.accountMenu ul li {
+  width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding-left: 20px;
+  background: #FFF;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.navibar div.accountMenu ul li:hover {
+  background: rgba(255, 255, 255, 0.7294117647);
+  cursor: default;
 }
 
 /*# sourceMappingURL=navibar.module.css.map */
