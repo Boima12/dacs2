@@ -1,6 +1,7 @@
 import styles from './navibar.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
+import axios from 'axios';
 
 import chatimg from '../../assets/images/chat.png';
 import inboximg from '../../assets/images/inbox.png';
@@ -14,10 +15,50 @@ function Co_navibar() {
     // Account logged checking
     const [isAccountApproved, setIsAccountApproved] = useState(false);
 
-    // Simulating account approval check (replace this logic with cookies/session handling later)
+    // Helper function to get cookies
+    const getCookie = (cookieName) => {
+        const cookies = document.cookie.split('; ');
+        for (let cookie of cookies) {
+            const [key, value] = cookie.split('=');
+            if (key === cookieName) {
+                return decodeURIComponent(value);
+            }
+        }
+        return null;
+    };
+
+    // Simulating account approval check
     useEffect(() => {
-        // Here you would check cookies, session, or API to verify the account
-        setIsAccountApproved(false); // Set the state based on the logic
+        // Fetch cookies
+        const accountName = getCookie('accountName');
+        const accountPassword = getCookie('accountPassword');
+
+        // Check if cookies exist
+        if (accountName && accountPassword) {
+            // Send a POST request to the server
+            axios.post('http://127.0.0.1:8000/account/navibar', {
+                accountName,
+                accountPassword,
+            })
+                .then(response => {
+                    // If the server returns 'account true', approve the account
+                    if (response.data === 'account true') {
+                        console.log("[Server: account/navibar] account approved!.")
+                        setIsAccountApproved(true);
+                    } else {
+                        console.log("[Server: account/navibar] account name or password didn't match.")
+                        setIsAccountApproved(false);
+                    }
+                })
+                .catch(error => {
+                    console.error('[Server: account/navibar] Error verifying account:', error);
+                    setIsAccountApproved(false); // Default to false on error
+                });
+        } else {
+            // If no cookies, set to false
+            console.log("[Server: account/navibar] found no entry cookies.")
+            setIsAccountApproved(false);
+        }
     }, []);
 
     
@@ -65,7 +106,7 @@ function Co_navibar() {
                 className={styles.entryBt} 
                 style={{ display: isAccountApproved ? 'none' : 'inline-block' }}
                 >
-                    <button type="button" onClick={() => navigate('/pages/account')}>Login / Sign up</button>
+                    <button type="button" onClick={() => navigate('/pages/account/entry')}>Login / Sign up</button>
                 </div>
                 
                 <div 
@@ -85,7 +126,8 @@ function Co_navibar() {
                 style={{ display: isAccountMenuVisible ? 'inline-block' : 'none' }}
                 >
                     <ul>
-                        <li>Trang tài khoản</li>
+                        <li onClick={() => navigate('/pages/account')}>Trang tài khoản</li>
+                        <li onClick={() => navigate('/pages/account/accountSettings')}>Thiết lập</li>
                         <li>Đăng xuất</li>
                     </ul>
                 </div>

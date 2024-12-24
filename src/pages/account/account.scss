@@ -1,0 +1,195 @@
+div.main {
+    width: 100vw;
+    background: #191919;
+
+    display: flex;
+    flex-direction: column;
+
+    div.mainPart {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        div.mainAndSide {
+            width: 1225px;
+            flex-shrink: 0;
+            margin-top: 200px;    
+            
+            position: relative;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            // outline: 3px solid red;
+
+            div.mainBox {
+                width: 850px;
+                flex-shrink: 0;      
+                padding-left: 25px;
+                border-radius: 5px;
+                background: #D9D9D9; 
+                
+                position: relative;
+                
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                div.account_box {
+                    width: 765px;
+                    height: 461px;
+                    flex-shrink: 0;  
+                    
+                    position: relative;
+                    top: -100px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    div.account_top {
+                        width: 765px;
+                        height: 200px;
+                        flex-shrink: 0;
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+
+                        div.text1 {
+                            width: 540px;
+                            height: 86px;
+                            flex-shrink: 0;                   
+                            
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+
+                            p {
+                                margin: 0;
+                                padding: 0;
+
+                                &:nth-child(1) {
+                                    color: #000;
+                                    font-family: Inter;
+                                    font-size: 36px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;                                    
+                                }          
+                                
+                                &:nth-child(2) {
+                                    color: #000;
+                                    font-family: Inter;
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;                                    
+                                }
+                            }
+                        }
+                    }
+
+                    div.account_bottom {
+                        width: 742px;
+                        height: 211px;
+                        flex-shrink: 0;           
+                        border-radius: 5px;
+                        background: #FFF;
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            width: 700px;
+                            height: 181px;
+                            flex-shrink: 0;
+                            margin: 0;
+                            padding: 0;
+                            
+                            color: #000;
+                            font-family: Inter;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;                            
+                        }
+                    }
+                }
+
+                h2 {
+                    color: #000;
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                    
+                }
+
+                div.experiences {
+                    width: 718px;
+                    flex-shrink: 0;        
+                    
+                    height: 2000px; // delete this later
+
+                    outline: 3px solid blue;
+                }
+            }
+
+            div.sideBox {
+                width: 300px;
+                height: 550px;
+                flex-shrink: 0;
+                border-radius: 5px;
+                background: #D9D9D9;   
+                            
+                padding: 50px 0 0 10px; 
+                position: sticky;   
+                top: 75px;            
+
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+
+                div.box2 {
+                    width: 90%;
+                    margin-bottom: 25px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    h3 {
+                        margin: 0;
+                        padding: 0;
+
+                        color: #000;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: bold;
+                        font-weight: 400;
+                        line-height: normal;                        
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+
+                        color: #000;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;                        
+                    }
+                }
+            }
+        }
+    }
+}

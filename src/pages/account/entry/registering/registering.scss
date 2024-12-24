@@ -1,0 +1,84 @@
+div.main {
+    width: 100vw;
+    height: 100vh;
+    background: #191919;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.step {
+        width: 800px;
+        height: 550px;
+        flex-shrink: 0;        
+        border-radius: 15px;
+        background: #FFF4E6;
+
+        padding: 20px 20px 20px 35px;
+        transition: all 0.4s;
+        opacity: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h3 {
+            align-self: center;
+
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;            
+        }
+
+        div.inputs {
+            width: 550px;
+            flex-shrink: 0;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            input {
+                width: 550px;
+                height: 40px;
+                flex-shrink: 0;  
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.30);
+                background: #FFF;
+                
+                color: rgba(0, 0, 0, 0.50);
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;                
+            }
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            flex-shrink: 0; 
+            border-radius: 5px;
+            background: #A8E8A8;
+
+            align-self: flex-end;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #000;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;            
+        }
+    }
+}

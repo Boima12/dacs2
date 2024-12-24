@@ -1,342 +1,353 @@
 div.main {
-    width: 100%;
-    height: calc(100vh - 40px);
-    background: #191919;
+
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    div.box1 {
-        width: 1274px;
-        height: 557px;
-        flex-shrink: 0;  
-        
-        margin-right: 75px;
-
+    div.mainPart {
+        width: 100%;
+        height: calc(100vh - 40px);
+        background: #191919;
+    
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
-        // outline: 3px solid red;
-
-        div.sideDecoration {
-            width: 606px;
+        div.box1 {
+            width: 1274px;
             height: 557px;
-            flex-shrink: 0;
-
-            position: relative;
+            flex-shrink: 0;  
             
+            margin-right: 75px;
+    
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            // outline: 3px solid blue;
-
-            div.images {
-                width: 573px;
-                height: 466px;
-                flex-shrink: 0;
-
-                position: relative;
-                left: 33px;
-                
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                // outline: 3px solid green;
-
-                img {
-                    width: 401px;
-                    height: 255px;
-                    flex-shrink: 0;
-                    border-radius: 30px;
-
-                    object-fit: cover;
-                    display: block;
-
-                    position: absolute;
-
-                    &:nth-of-type(1) {
-                        top: 0;
-                        left: 10px;
-
-                        z-index: 1;
-                    }
-
-                    &:nth-of-type(2) {
-                        bottom: 0;
-                        right: 10px;
-
-                        z-index: 2;
-                    }
-                }
-            }
-
-            h3 {
-                color: #FFF;
-                font-family: Inter;
-                font-size: 32px;
-                font-style: italic;
-                font-weight: 400;
-                line-height: normal; 
-                
-                margin-bottom: 0px;
-            }
-
-            p {
-                color: #FFF;
-                font-family: Inter;
-                font-size: 12px;
-                font-style: italic;
-                font-weight: 700;
-                line-height: normal;        
-                
-                position: relative;
-                left: 350px;
-            }
-        }
-
-        div.form1 {
-            width: 470px;
-            height: 530px;
-            flex-shrink: 0;     
-            border-radius: 20px;
-            background: #FFF;  
-            
-            position: relative;
-
-            display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-
-            // outline: 3px solid yellow;
-
-            div.thanhTren {
-                width: 470px;
-                height: 47px;
-                flex-shrink: 0;                
-
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                display: flex;
-
-                button {
-                    width: 235px;
-                    height: 47px;
-                    flex-shrink: 0;   
-
-                    border: 0;
-                    transition: all 0.2s;
-                    
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    color: rgba(0, 0, 0, 0.80);
-                    font-family: Inter;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;                    
-                    
-                    &:nth-child(1) {
-                        border-radius: 20px 0px 0px 0px;
-                        background: #FFF;                        
-                    }
-
-                    &:nth-child(2) {
-                        border-radius: 0px 20px 0px 0px;
-                        background: #D9D9D9;                   
-                    }
-                }
-            }
-
-            form {
-                transition: all 0.2s;
-            }
-
-            form.form_dangNhap {
-                width: 358px;
-                height: 312px;
+    
+            // outline: 3px solid red;
+    
+            div.sideDecoration {
+                width: 606px;
+                height: 557px;
                 flex-shrink: 0;
-                
+    
                 position: relative;
-
+                
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 21px;
-
-                // outline: 3px solid red;
-                // display: none;
-
-                input {
-                    width: 100%;
-                    height: 40px;
-                    flex-shrink: 0;   
-                    
-                    box-sizing: border-box;
-                    padding-left: 10px;
-                    border-radius: 5px;
-                    border: 1px solid rgba(0, 0, 0, 0.30);
-                    background: #FFF;  
-                    
-                    font-family: Inter;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;                    
-                }
-
-                div.LuuMatKhau {
-                    width: 108px;
-                    height: 20px;
+    
+                // outline: 3px solid blue;
+    
+                div.images {
+                    width: 573px;
+                    height: 466px;
                     flex-shrink: 0;
+    
+                    position: relative;
+                    left: 33px;
                     
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    input[type="checkbox"] {
-                        width: 20px;
-                        height: 20px;
-                        flex-shrink: 0;   
-                        border: 1px solid rgba(0, 0, 0, 0.50);
-                        background: #FFF;                                     
-                    }
-
-                    label {
-                        color: #000;
-                        font-family: Inter;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;                        
-                    }
-                }
-
-                button {
-                    width: 358px;
-                    height: 40px;
-                    flex-shrink: 0;       
-                    border-radius: 10px;
-                    background: #191919;
-
-                    position: absolute;
-                    bottom: 0;
-                    
-                    display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-
-                    color: #FFF;
-                    font-family: Inter;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;                    
-                }
-            }
-
-            form.form_dangKy {
-                width: 358px;
-                height: 312px;
-                flex-shrink: 0;
-
-                position: relative;
-                
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 21px;
-                
-                // outline: 3px solid red;
-                display: none;
-                opacity: 0;
-
-                input {
-                    width: 100%;
-                    height: 40px;
-                    flex-shrink: 0;   
-                    
-                    box-sizing: border-box;
-                    padding-left: 10px;
-                    border-radius: 5px;
-                    border: 1px solid rgba(0, 0, 0, 0.30);
-                    background: #FFF;  
-                    
-                    font-family: Inter;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;                    
-                }
-
-                div.checkBox2 {
-                    width: 350px;
-                    height: 30px;
-                    flex-shrink: 0;                    
-
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    input[type="checkbox"] {
-                        width: 20px;
-                        height: 20px;
-                        flex-shrink: 0;       
-                        border: 1px solid rgba(0, 0, 0, 0.50);
-                        background: #FFF;                                         
-                    }
-
-                    label {
-                        width: 320px;
-
-                        color: #000;
-                        font-family: Inter;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;                      
-                        
-                        span {
-                            color: #0C8B0C;
-                            cursor: pointer;
+    
+                    // outline: 3px solid green;
+    
+                    img {
+                        width: 401px;
+                        height: 255px;
+                        flex-shrink: 0;
+                        border-radius: 30px;
+    
+                        object-fit: cover;
+                        display: block;
+    
+                        position: absolute;
+    
+                        &:nth-of-type(1) {
+                            top: 0;
+                            left: 10px;
+    
+                            z-index: 1;
+                        }
+    
+                        &:nth-of-type(2) {
+                            bottom: 0;
+                            right: 10px;
+    
+                            z-index: 2;
                         }
                     }
                 }
-
-                button {
-                    width: 358px;
-                    height: 40px;
-                    flex-shrink: 0;                    
-                    border-radius: 10px;
-                    background: #191919;              
-                    
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
+    
+                h3 {
                     color: #FFF;
                     font-family: Inter;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;                    
+                    font-size: 32px;
+                    font-style: italic;
+                    font-weight: 400;
+                    line-height: normal; 
+                    
+                    margin-bottom: 0px;
+                }
+    
+                p {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-weight: 700;
+                    line-height: normal;        
+                    
+                    position: relative;
+                    left: 350px;
                 }
             }
-
+    
+            div.form1 {
+                width: 470px;
+                height: 530px;
+                flex-shrink: 0;     
+                border-radius: 20px;
+                background: #FFF;  
+                
+                position: relative;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                // outline: 3px solid yellow;
+    
+                div.thanhTren {
+                    width: 470px;
+                    height: 47px;
+                    flex-shrink: 0;                
+    
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    display: flex;
+    
+                    button {
+                        width: 235px;
+                        height: 47px;
+                        flex-shrink: 0;   
+    
+                        border: 0;
+                        transition: all 0.2s;
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;                    
+                        
+                        &:nth-child(1) {
+                            border-radius: 20px 0px 0px 0px;
+                            background: #FFF;                        
+                        }
+    
+                        &:nth-child(2) {
+                            border-radius: 0px 20px 0px 0px;
+                            background: #D9D9D9;                   
+                        }
+                    }
+                }
+    
+                form {
+                    transition: all 0.2s;
+                }
+    
+                form.form_dangNhap {
+                    width: 358px;
+                    height: 312px;
+                    flex-shrink: 0;
+                    
+                    position: relative;
+    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 21px;
+    
+                    // outline: 3px solid red;
+                    // display: none;
+    
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        flex-shrink: 0;   
+                        
+                        box-sizing: border-box;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.30);
+                        background: #FFF;  
+                        
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;                    
+                    }
+    
+                    div.LuuMatKhau {
+                        width: 108px;
+                        height: 20px;
+                        flex-shrink: 0;
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        input[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;   
+                            border: 1px solid rgba(0, 0, 0, 0.50);
+                            background: #FFF;                                     
+                        }
+    
+                        label {
+                            color: #000;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;                        
+                        }
+                    }
+    
+                    button {
+                        width: 358px;
+                        height: 40px;
+                        flex-shrink: 0;       
+                        border-radius: 10px;
+                        background: #191919;
+    
+                        position: absolute;
+                        bottom: 0;
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;                    
+                    }
+                }
+    
+                form.form_dangKy {
+                    width: 358px;
+                    height: 312px;
+                    flex-shrink: 0;
+    
+                    position: relative;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 21px;
+                    
+                    // outline: 3px solid red;
+                    display: none;
+                    opacity: 0;
+    
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        flex-shrink: 0;   
+                        
+                        box-sizing: border-box;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, 0.30);
+                        background: #FFF;  
+                        
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;                    
+                    }
+    
+                    div.checkBox2 {
+                        width: 350px;
+                        height: 30px;
+                        flex-shrink: 0;                    
+    
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        input[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;       
+                            border: 1px solid rgba(0, 0, 0, 0.50);
+                            background: #FFF;                                         
+                        }
+    
+                        label {
+                            width: 320px;
+    
+                            color: #000;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;                      
+                            
+                            span {
+                                color: #0C8B0C;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+    
+                    button {
+                        width: 358px;
+                        height: 40px;
+                        flex-shrink: 0;                    
+                        border-radius: 10px;
+                        background: #191919;              
+                        
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+    
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;                    
+                    }
+                }
+    
+            }
         }
+
     }
+
 }
 
 
