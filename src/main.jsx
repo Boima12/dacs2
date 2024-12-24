@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './App.jsx'
 import Co_account from './pages/account/account.jsx';
+import Co_admin from '~/src/pages/admin/admin.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,7 +16,7 @@ createRoot(document.getElementById('root')).render(
 
         <Route path="/" element={<App />} />
         <Route path="/pages/account" element={<Co_account />} />
-        {/* <Route path="/pages/page2" element={<Co_Page2 />} /> */}
+        <Route path="/pages/admin" element={<Co_admin />} />
 
       </Routes>
     </BrowserRouter>

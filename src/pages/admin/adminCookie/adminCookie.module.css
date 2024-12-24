@@ -1,0 +1,87 @@
+div.main {
+  width: 810px;
+  height: 345px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+div.main input {
+  width: 302px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding-left: 15px;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.create {
+  width: 369px;
+  height: 247px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+div.main div.create button {
+  width: 120px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #A8E8A8;
+}
+div.main div.delete {
+  width: 369px;
+  height: 247px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 115px;
+}
+div.main div.delete button {
+  width: 120px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #ED8787;
+}
+div.main p.info {
+  position: absolute;
+  align-self: flex-end;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=adminCookie.module.css.map */

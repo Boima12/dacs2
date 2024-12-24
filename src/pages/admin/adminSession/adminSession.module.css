@@ -1,0 +1,132 @@
+div.main {
+  width: 810px;
+  height: 631px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+div.main input {
+  width: 302px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding-left: 15px;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.createAndDelete {
+  width: 810px;
+  height: 210px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+div.main div.createAndDelete div.create {
+  width: 369px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+div.main div.createAndDelete div.create button {
+  width: 80px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #A8E8A8;
+}
+div.main div.createAndDelete div.delete {
+  width: 369px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+div.main div.createAndDelete div.delete button {
+  width: 80px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #ED8787;
+}
+div.main div.print {
+  width: 650px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #FFF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.main div.print button {
+  width: 80px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #A8E8A8;
+}
+div.main div.print p.printText {
+  width: 408px;
+  height: 132px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.send {
+  width: 369px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #404040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+div.main div.send button {
+  width: 180px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #EDEA87;
+}
+
+/*# sourceMappingURL=adminSession.module.css.map */

@@ -15,29 +15,36 @@ div.main {
         display: flex;
         align-items: center;
     
-        a {
-            text-decoration: none;
-            width: 100px;
+        nav {
             height: 100%;
-    
-            transition-duration: 0.4s;
-            transition-property: all;
-    
+
             display: flex;
-            justify-content: center;
             align-items: center;
-    
-            
-    
-            // outline: 1px solid red;
-    
+
+            .navigation_component {
+                width: 100px;
+                height: 100%;
+                box-sizing: border-box;
+
+                transition: all 0.4s;
+        
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: #7B61FF;
+                    cursor: default;
+                }
+            }
+
             h3 {
                 color: #FFF;
                 font-family: Inter;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: normal;            
+                line-height: normal;    
             }
     
             p {
@@ -46,15 +53,7 @@ div.main {
                 font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: normal;            
-            }
-    
-            &:hover {
-                background-color: #7B61FF;
-    
-                h3, p {
-                    color: #ffffff;
-                }
+                line-height: normal;   
             }
         }
     

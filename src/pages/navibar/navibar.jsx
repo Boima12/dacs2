@@ -17,7 +17,7 @@ function Co_navibar() {
     // Simulating account approval check (replace this logic with cookies/session handling later)
     useEffect(() => {
         // Here you would check cookies, session, or API to verify the account
-        setIsAccountApproved(true); // Set the state based on the logic
+        setIsAccountApproved(false); // Set the state based on the logic
     }, []);
 
     
@@ -52,13 +52,14 @@ function Co_navibar() {
         <div className={styles.main}>
 
             <div className={styles.navibar}>
-                <a href="#"
-                    onClick={() => navigate('/')}
-                ><h3>GameDov</h3></a>
-                <a href="#"><p>Trang Chủ</p></a>
-                <a href="#"><p>Tìm Việc</p></a>
-                <a href="#"><p>Tuyển Dụng</p></a>
-                <a href="#"><p>Admin</p></a>
+
+                <nav>
+                    <h3 className={styles.navigation_component} onClick={() => navigate('/')}>GameDov</h3>
+                    <p className={styles.navigation_component}>Trang Chủ</p>
+                    <p className={styles.navigation_component}>Tìm Việc</p>
+                    <p className={styles.navigation_component}>Tuyển Dụng</p>
+                    <p className={styles.navigation_component} onClick={() => navigate('/pages/admin')}>Admin</p>
+                </nav>
 
                 <div 
                 className={styles.entryBt} 

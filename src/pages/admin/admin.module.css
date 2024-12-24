@@ -1,0 +1,68 @@
+div.main {
+  width: 100vw;
+  height: 100vh;
+  background: #FFF4E6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.main div.adminPart {
+  width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: flex-start;
+}
+div.main div.adminPart div.adminSide {
+  width: 280px;
+  height: 100%;
+  background: #FFF;
+  outline: 1px solid rgba(128, 128, 128, 0.5);
+  display: flex;
+  justify-content: center;
+}
+div.main div.adminPart div.adminSide ul {
+  width: 200px;
+  flex-shrink: 0;
+  margin: 50px 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.main div.adminPart div.adminSide ul li {
+  width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 0;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.adminPart div.adminSide ul li:hover {
+  background: #ECECEC;
+  cursor: default;
+}
+div.main div.adminPart div.adminSide ul li.activeTab {
+  background: #ECECEC;
+}
+div.main div.adminPart div.adminMain {
+  width: calc(100vw - 280px);
+  height: calc(100vh - 40px);
+}
+div.main div.adminPart div.adminMain div.adminWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=admin.module.css.map */
