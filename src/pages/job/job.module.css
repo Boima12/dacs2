@@ -1,0 +1,39 @@
+div.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+div.main div.mainPart {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 100px 0 300px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+div.main div.mainPart div.box1 {
+  padding-left: 25px;
+  width: 716px;
+  height: 168px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+div.main div.mainPart div.box1 h3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+div.main div.mainPart div.box1 p {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=job.module.css.map */
