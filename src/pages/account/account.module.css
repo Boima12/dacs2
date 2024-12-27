@@ -97,7 +97,7 @@ div.main div.mainPart div.mainAndSide div.mainBox div.account_box div.account_bo
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 div.main div.mainPart div.mainAndSide div.mainBox h2 {
@@ -112,7 +112,6 @@ div.main div.mainPart div.mainAndSide div.mainBox div.experiences {
   width: 718px;
   flex-shrink: 0;
   height: 2000px;
-  outline: 3px solid blue;
 }
 div.main div.mainPart div.mainAndSide div.sideBox {
   width: 300px;

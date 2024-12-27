@@ -9,6 +9,10 @@ import Co_entry from '~/src/pages/account/entry/entry.jsx';
 import Co_registering from '~/src/pages/account/entry/registering/registering.jsx';
 import Co_accountSettings from '~/src/pages/account/accountSettings/accountSettings.jsx';
 
+import Co_job from '~/src/pages/job/job.jsx';
+import Co_jobInformation from '~/src/pages/job/jobInformation/jobInformation';
+
+
 import Co_admin from '~/src/pages/admin/admin.jsx';
 
 
@@ -26,6 +30,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/pages/account/accountSettings" element={<Co_accountSettings />} />
 
         <Route path="/pages/admin" element={<Co_admin />} />
+
+        <Route path="/pages/job" element={<Co_job />} />
+        <Route path="/pages/job/jobInformation" element={<Co_jobInformation />} />
 
       </Routes>
     </BrowserRouter>

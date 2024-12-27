@@ -88,6 +88,21 @@ function Co_navibar() {
     }, []);
 
 
+    function deleteCookie(cname, path = "/", secure = false, sameSite = "Strict") {
+        const secureFlag = secure ? "Secure;" : "";
+        const sameSiteFlag = `SameSite=${sameSite};`;
+        document.cookie = `${encodeURIComponent(cname)}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${path}; ${secureFlag} ${sameSiteFlag}`;
+    }
+
+
+    // Dang Xuat
+    const handleDangXuat = () => {
+        deleteCookie("accountName");
+        deleteCookie("accountPassword");
+
+        navigate('/pages/account/entry')
+    }
+
     
     return (
         <div className={styles.main}>
@@ -97,7 +112,7 @@ function Co_navibar() {
                 <nav>
                     <h3 className={styles.navigation_component} onClick={() => navigate('/')}>GameDov</h3>
                     <p className={styles.navigation_component}>Trang Chủ</p>
-                    <p className={styles.navigation_component}>Tìm Việc</p>
+                    <p className={styles.navigation_component} onClick={() => navigate('/pages/job')}>Tìm Việc</p>
                     <p className={styles.navigation_component}>Tuyển Dụng</p>
                     <p className={styles.navigation_component} onClick={() => navigate('/pages/admin')}>Admin</p>
                 </nav>
@@ -128,7 +143,7 @@ function Co_navibar() {
                     <ul>
                         <li onClick={() => navigate('/pages/account')}>Trang tài khoản</li>
                         <li onClick={() => navigate('/pages/account/accountSettings')}>Thiết lập</li>
-                        <li>Đăng xuất</li>
+                        <li onClick={handleDangXuat}>Đăng xuất</li>
                     </ul>
                 </div>
 

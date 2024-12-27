@@ -1,0 +1,121 @@
+div.main {
+    width: 716px;
+    height: 231px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D9D9D9;
+
+    padding: 10px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    p {
+        margin: 0;
+    }
+
+    p {
+        &.jobTitle {
+            width: 320px;
+
+            color: #000;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;            
+        }
+
+        &.workType {
+            width: 320px;
+
+            color: #000;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;            
+        }
+
+        &.jobDescription {
+            width: 678px;
+            height: 75px;
+            flex-shrink: 0;  
+            
+            color: #000;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;            
+        }
+    }
+
+    div.textSide {
+        width: 200px;
+        height: 36px;
+        flex-shrink: 0;
+        
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        p {
+            &.location {
+                width: 200px;
+                
+                color: #000;
+                text-align: right;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;                
+            }
+
+            &.jobSalary {
+                width: 200px;     
+                
+                color: #000;
+                text-align: right;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;                
+            }
+        }
+    }
+
+    button.xem {
+        width: 120px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #A8E8A8;
+        
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;        
+    }
+}
